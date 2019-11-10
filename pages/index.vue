@@ -5,7 +5,7 @@
         <img src="https://dummyimage.com/42x42.png?text=logo" alt />
       </nuxt-link>
       <h3>恍如初年</h3>
-      <p class="desc">我们从未准备好，只是时间到了。</p>
+      <p class="desc" @click="test">我们从未准备好，只是时间到了。</p>
     </div>
     <ul class="article_list">
       <article-card></article-card>
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import articleCard from '~/components/articles/articleCard'
+import articleCard from "~/components/articles/articleCard";
 export default {
   components: {
     articleCard
@@ -41,7 +41,7 @@ export default {
     h3 {
       font-size: 2rem;
       padding: 0 15px;
-      font-weight:500;
+      font-weight: 500;
     }
 
     .desc {
